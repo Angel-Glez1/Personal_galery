@@ -1,0 +1,63 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	/* scroll-snap-type: y mandatory; */
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: $font;
+}
+
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	margin: 0;
+	font-size: 3.8rem;
+}
+
+h2 {
+	margin: 0;
+	font-size: 2.8rem;
+
+}
+
+h3 {
+	margin: 0;
+	font-size: 1.8rem;
+
+}
+
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+p {
+	line-height: 1.6;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var($max-width);
+}

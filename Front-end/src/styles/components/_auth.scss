@@ -1,0 +1,152 @@
+.auth__container {
+	height: 100vh;
+	min-width: 100%;
+	background-color: $black;
+
+	@include tablet {
+		background-image: url(../../assets/bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: grid;
+		grid-template-columns: repeat(2, 45%);
+		justify-content: space-evenly;
+		align-content: center;
+	}
+}
+
+.color-help {
+	color: $second-color;
+}
+
+
+.auth__presentation,
+.auth__form-container {
+	width: 90%;
+	margin: 1rem auto;
+}
+
+.auth__presentation {
+	display: none;
+}
+
+.auth__marca {
+	color: $white;
+	width: 100%;
+	padding: 5rem;
+}
+
+
+@include tablet {
+	.auth__marca {
+		grid-column: 1/3;
+		text-shadow: 0 .2rem 1rem #000000;
+	}
+
+	.auth__presentation {
+		display: block;
+	}
+}
+
+.auth__question,
+.auth__description,
+.auth__register {
+	margin-top: 1rem;
+	text-align: center;
+	color: $white;
+
+}
+
+.auth__question h2 {
+	font-size: 4rem;
+}
+
+.auth__description p {
+	text-shadow: 0 .5rem 1rem #000000;
+	font-size: 2.5rem;
+	text-align: left;
+
+}
+
+.auth__register {
+	font-size: 2rem;
+}
+
+.auth__form-container {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.auth__form-container h2 {
+	font-size: 4.2rem;
+	color: $white;
+	padding: 2rem;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.auth__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.auth__form>* {
+	margin-top: 2rem;
+
+}
+
+.auth__input {
+	font-size: 2rem;
+	padding: 1.5rem 1rem;
+	background-color: $gray;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	color: $white;
+
+	&::placeholder {
+		color: $second-alpha-color;
+	}
+}
+
+button.auth__input {
+	background-color: $second-color;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 200ms;
+
+	&:hover {
+		background-color: $second-alpha-color;
+		cursor: pointer;
+
+
+	}
+}
+
+@include tablet {
+
+	.auth__presentation,
+	.auth__form-container {
+		max-width: 450px;
+		background-color: rgba(0, 0, 0, 0.40);
+		padding: 4rem 4rem;
+		margin: 1rem auto 4rem auto;
+		border-radius: .3rem;
+
+	}
+
+	.resgister {
+		grid-column: 1/3;
+	}
+
+	.auth__form-container h2 {
+		font-size: 4rem;
+		padding: 1rem;
+		width: max-content;
+		padding-left: 0;
+	}
+}

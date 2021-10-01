@@ -1,0 +1,169 @@
+.album__title {
+	margin-top: 1rem;
+	text-transform: capitalize;
+}
+
+
+.album__content {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 3rem auto;
+	flex-direction: row;
+	border-bottom: thin solid #ccc;
+}
+
+
+.album__info {
+
+	.album__name {
+		font-size: 3rem;
+		text-align: left;
+		border-bottom: thin solid #fff;
+		transition: border 200ms;
+
+		&:hover {
+			cursor: pointer;
+			border-bottom: thin solid #212529;
+		}
+	}
+
+
+	.album__date span {
+		color: $test-color-1;
+	}
+}
+
+
+.options .more-options {
+	background: none;
+	font-weight: bold;
+	padding: 5px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.4s;
+}
+
+.options .more-options:hover {
+	background-color: #ddd;
+}
+
+.options .submenu {
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	background-color: #fff;
+	width: 100px;
+	position: absolute;
+
+
+}
+
+.submenu-active {
+	display: block !important;
+}
+
+
+.options .submenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.options .submenu ul li div {
+	font-size: 12px;
+	padding: 10px;
+	display: block;
+	color: #212529;
+	text-decoration: none;
+}
+
+.options .submenu ul li:hover {
+	background-color: #212529;
+	cursor: pointer;
+
+	div {
+
+		color: #fff;
+	}
+}
+
+.album__btn-radio {
+
+	h2 {
+		text-align: left;
+	}
+
+	margin: 1.2rem 0;
+
+	.album__option {
+
+		margin: 2rem 0;
+		display: flex;
+		align-items: center;
+
+	}
+
+	label {
+		display: inline-block;
+		cursor: pointer;
+		color: #171a1d;
+		position: relative;
+		padding: 5px 15px 5px 51px;
+		font-size: 1.5rem;
+		border-radius: 5px;
+		-webkit-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;
+
+
+		&:hover {
+			background: rgba($second-color, .1)
+		}
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			position: absolute;
+			left: 15px;
+			border-radius: 50%;
+			background: none;
+			border: 3px solid #171a1d;
+		}
+	}
+
+
+	input[type="radio"] {
+		display: none;
+
+		&:checked+label:before {
+			display: none;
+		}
+
+		&:checked+label {
+			padding: 5px 15px;
+			background: $second-color;
+			border-radius: 2px;
+			color: #fff;
+		}
+
+	}
+}
+
+.options {
+	text-align: center;
+
+	button.more-options{
+		padding: 1rem;
+	}
+
+
+	button.btn{
+		margin-left: 0;
+	}
+
+	
+}

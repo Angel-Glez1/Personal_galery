@@ -1,0 +1,13 @@
+@import './base/normalize';
+@import './base/variables';
+@import './base/minxins';
+@import './base/settings';
+@import './base/utilities';
+
+// Components
+@import './components/auth';
+@import './components/nav';
+@import './components/aside';
+@import './components/modal';
+@import './components/album';
+@import './components/photo';

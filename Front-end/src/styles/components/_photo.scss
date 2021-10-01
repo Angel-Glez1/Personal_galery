@@ -1,0 +1,14 @@
+.photo__grid {
+	display: grid;
+	place-content: center;
+
+	@include tablet{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include desktop{
+		grid-template-columns: repeat(3, 1fr);
+
+	}
+
+}

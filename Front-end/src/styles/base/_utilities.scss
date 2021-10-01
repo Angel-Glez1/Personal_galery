@@ -1,0 +1,99 @@
+.bold {
+	font-weight: bold;
+}
+
+
+.center-item-screen {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-medium {
+	font-size: 2rem;
+	color: #e59500;
+	padding-top: 1rem;
+}
+
+.c-b{
+	color: black;
+	font-size: 1.5rem;
+}
+
+.main{
+	display: flex;
+}
+
+
+.txt-center{
+	text-align: center;
+}
+
+
+.form{
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 1rem;
+
+}
+
+.input {
+	font-size: 2rem;
+	padding: 1rem;
+	border: none;
+	border-bottom: thin solid white;
+	outline: none;
+	color: $black;
+	margin: 1rem 0;
+	transition: border-bottom 200ms ease-in-out;
+
+	&:focus{
+		border-bottom: thin solid $second-color;
+
+	}
+
+	&::placeholder {
+		color: black;
+	}
+}
+
+button.input {
+	background-color: $second-color;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 200ms;
+	color: white;
+
+	&:hover {
+		background-color: $second-alpha-color;
+		cursor: pointer;
+
+
+	}
+}
+
+
+.component{
+	padding: 1rem;
+	font-size: 1.5rem;
+	position: relative;
+	width: 100%;
+}
+
+
+.btn{
+	padding: 1rem;
+	color: #e59500;
+	background-color: transparent;
+	border: none;
+	margin-left: 2rem;
+	&:hover{
+		cursor: pointer;
+	}
+
+}
+
